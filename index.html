@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Section</title>
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<style>
+  .about-section {
+    text-align: center;
+    padding: 50px 0;
+  }
+  .about-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  .about-section img {
+    width: 200px; /* Adjust the size as needed */
+    height: 200px;
+    border-radius: 50%; /* Makes the image round */
+    margin-bottom: 20px;
+  }
+  .about-section p {
+    color: #333;
+  }
+
+  /* Additional CSS for Projects Section */
+.projects-section h2 {
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+}
+.card {
+  box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Adds a subtle shadow around the card */
+}
+.card-img-top {
+  max-height: 180px; /* Adjust this value to fit the image properly in the card */
+  object-fit: cover; /* This makes sure the image covers the area properly */
+}
+.card-body {
+  padding: 15px;
+}
+.card-title {
+  font-size: 1.25rem;
+}
+.card-text {
+  margin-bottom: 15px;
+}
+
+/* Additional CSS for Skills Section */
+.skills-section h2 {
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+}
+.skills-section .card {
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.skills-section .card-img-top {
+  padding: 20px; /* Add padding around your images if needed */
+  background-color: #f8f9fa; /* Adjust the background color if your images have transparent areas */
+  height: 180px; /* Fixed height for consistency */
+  object-fit: contain; /* This will make sure the image is scaled properly within the container */
+}
+.skills-section .card-body {
+  padding: 15px;
+}
+.skills-section .card-title {
+  font-size: 1.25rem;
+  margin-bottom: 15px;
+}
+.skills-section .btn-outline-primary {
+  color: #007bff;
+  border-color: #007bff;
+}
+.skills-section .btn-outline-primary:hover {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+/* Additional CSS for Contact Section */
+.contact-section {
+  padding: 50px 0;
+}
+.contact-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+.contact-section p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+.social-icon {
+  width: 50px; /* Size of your icons */
+  margin-bottom: 10px;
+}
+/* Hover effect for icons */
+.social-icon:hover {
+  opacity: 0.7;
+}
+/* Style for links in the Contact section */
+.contact-section a {
+  color: #fff;
+  text-decoration: none; /* Removes underline from links */
+  display: inline-block; /* Allows for margin on the bottom */
+  margin-bottom: 10px;
+}
+.contact-section a:hover {
+  color: #ddd; /* Color when hovering over the link */
+}
+
+/* CSS for Sticky Navbar */
+.navbar {
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Adds a shadow for depth */
+}
+
+/* Ensure padding is added to body to avoid content being hidden behind the navbar */
+body { 
+  padding-top: 56px; /* Adjust this value based on the height of your navbar */
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Style for navigation bar links */
+.navbar-nav .nav-link {
+  color: white;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #f8f9fa; /* Slightly lighter white when hovering over links */
+}
+
+/* Media query for responsive navbar collapsing */
+@media (max-width: 992px) {
+  .navbar-collapse {
+    background-color: #343a40; /* Same as navbar color for seamless look */
+  }
+}
+
+
+</style>
+
+</head>
+<body>
+
+<section id='about' class="about-section">
+  <div class="container">
+    <h2>About</h2>
+    <img src="images/about/1.jpeg" alt="About Me">
+    <p>I am a motivated and fast-learning. Fresh graduate from industrial engineering and ready to contribute to a dynamic team or work independently, even under pressure. I am committed to utilizing my skills to advance the mission of the company and I am enthusiastic about continuously learning and developing new capabilities to deliver the best results. Currently, I am focusing on transitioning to a career as a data scientist, driven by a passion for data and a desire to explore data-driven solutions.</p>
+  </div>
+</section>
+<!-- Education Section -->
+<section id="education" class="education-section bg-light">
+  <div class="container">
+    <h2 class="text-center">Education</h2>
+    <ul>
+      <li>
+        <h4>Bachelor of Industrial Engineering</h4>
+        <p>Institut Teknologi Telkom Purwokerto, September 2018 - February 2023</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- Work Experience Section -->
+<section id="work-experience" class="work-experience-section">
+  <div class="container">
+    <h2 class="text-center">Work Experience</h2>
+    <ul>
+      <li>
+        <h4>Human Capital Business Partner (Internship)</h4>
+        <p>PT. Telekomunikasi Indonesia Tbk. <br> August 2021 - November 2021</p>
+        <ul>
+          <li>Managed the scheduling and communication with shareholders during a merger.</li>
+          <li>Ensured shareholders understood the merger process.</li>
+          <li>Contacted employees about job facility transfer issues.</li>
+          <li>Analyzed SOPs for job facility transfers using an OPC.</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- Certifications Section -->
+<section id="certifications" class="certifications-section bg-light">
+  <div class="container">
+    <h2 class="text-center">Certifications</h2>
+    <ul>
+      <li>
+        <h4>DTI - Data Science & Machine Learning</h4>
+        <p>Purwadhika Digital School, March 2024 - Present</p>
+      </li>
+      <li>
+        <h4>Supervised Machine Learning: Regression and Classification</h4>
+        <p>Coursera, Stanford University, June 2024</p>
+      </li>
+      <li>
+        <h4>CS50’s Introduction to Databases With SQL</h4>
+        <p>Harvard University, May 2024</p>
+      </li>
+      <li>
+        <h4>Bootcamp Master SQL for Data Analyst</h4>
+        <p>Genggam Data, January 2024</p>
+      </li>
+      <li>
+        <h4>Data Analysis Full Stack Intensive Bootcamp</h4>
+        <p>MySkil, October 2023</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+
+<!-- Projects Section -->
+<section id="projects" class="projects-section bg-light">
+  <div class="container">
+    <h2 class="text-center">Projects</h2>
+    <div class="row">
+      <!-- Project 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="images/projects/Bikeshare.jpeg" class="card-img-top" alt="Bike Sharing Prediction">
+          <div class="card-body">
+            <h5 class="card-title">Bike Sharing Prediction</h5>
+            <p class="card-text">Developed a regression model using XGBoost to predict bike demand. Achieved MAE, MAPE of 24%, and R-Squared metrics. Predicted bike count with ±24% error.</p>
+            <a href="https://github.com/luqmanilman/Capstone3_Purwadhika" class="btn btn-secondary" target="_blank">Source Code</a>
+          </div>
+        </div>
+      </div>
+      <!-- Project 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="images/projects/RFM.webp" class="card-img-top" alt="RFM Analysis">
+          <div class="card-body">
+            <h5 class="card-title">RFM Analysis</h5>
+            <p class="card-text">Explored customer behavior using Recency, Frequency, and Monetary metrics. Identified key segments for marketing strategies to improve retention.</p>
+            <a href="https://public.tableau.com/app/profile/luqman.ilman.muhammad/viz/RFMCustomerSegmentation_17174894733950/DB2" class="btn btn-secondary" target="_blank">Source Code</a>
+          </div>
+        </div>
+      </div>
+      <!-- Project 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="images/projects/bookstore.jpeg" class="card-img-top" alt="Lq’s Bookstore Management System">
+          <div class="card-body">
+            <h5 class="card-title">Lq’s Bookstore Management System</h5>
+            <p class="card-text">Created a simple management system in Python for bookstore records with CRUD operations.</p>
+            <a href="https://github.com/luqmanilman/Purwadhika_Capstone_Modul_1_DTI-Data_Science_2024" class="btn btn-secondary" target="_blank">Source Code</a>
+          </div>
+        </div>
+      </div>
+      <!-- Project 4 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="images/projects/bookstore2.jpg" class="card-img-top" alt="Bookstore Databases">
+          <div class="card-body">
+            <h5 class="card-title">Bookstore Databases</h5>
+            <p class="card-text">Designed a database for "Lq's Bookstore" using SQLite, managing tables like customers, store items, orders, and sales.</p>
+            <a href="https://github.com/luqmanilman/Final-Project-CS50-SQL" class="btn btn-secondary" target="_blank">Source Code</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Skills Section -->
+<section id="skills" class="skills-section bg-white">
+  <div class="container">
+    <h2 class="text-center">Skills</h2>
+    <div class="row">
+      <!-- Skill 1 -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card">
+          <img src="images/skills/1.png" class="card-img-top" alt="Python">
+          <div class="card-body">
+            <h5 class="card-title">Python</h5>
+            <p class="card-text">Experienced in Python for data analysis, machine learning, and automation.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Skill 2 -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card">
+          <img src="images/skills/2.png" class="card-img-top" alt="Data Visualization">
+          <div class="card-body">
+            <h5 class="card-title">Data Visualization</h5>
+            <p class="card-text">Proficient in Tableau, Excel, Matplotlib, and Seaborn for creating insightful visualizations.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Skill 3 -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card">
+          <img src="images/skills/3.png" class="card-img-top" alt="SQL">
+          <div class="card-body">
+            <h5 class="card-title">SQL</h5>
+            <p class="card-text">Skilled in SQL for database management and data querying.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Skill 4 -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card">
+          <img src="images/skills/4.png" class="card-img-top" alt="Data Storytelling">
+          <div class="card-body">
+            <h5 class="card-title">Data Storytelling</h5>
+            <p class="card-text">Adept at crafting narratives from data to drive insights and decisions.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  
+<!-- Publications Section -->
+<section id="publications" class="publications-section bg-light">
+  <div class="container">
+    <h2 class="text-center">Publications</h2>
+    <div class="row">
+      <!-- Publication 1 -->
+      <div class="col-md-3 mb-4">
+        <div class="card">
+          <a href="https://medium.com/@luqmanilman/what-is-the-difference-between-a-try-except-statement-and-an-if-else-statement-in-the-python-92bd4e978dcc" target="_blank">
+            <img src="images/publications/python.webp" class="card-img-top" alt="Python Article">
+            <div class="card-body">
+              <p class="card-text">What is the difference between a ‘try-except’ statement and an ‘if-else’ statement in the Python language?</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <!-- Publication 2 -->
+      <div class="col-md-3 mb-4">
+        <div class="card">
+          <a href="https://medium.com/@luqmanilman/optimizing-sql-queries-in-database-management-28d81a7b14a3" target="_blank">
+            <img src="images/publications/sql.webp" class="card-img-top" alt="SQL Article">
+            <div class="card-body">
+              <p class="card-text">Optimizing SQL Queries in Database Management</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <!-- Publication 3 -->
+      <div class="col-md-3 mb-4">
+        <div class="card">
+          <a href="https://medium.com/@luqmanilman/enhancing-predictive-models-with-transformtargetregressor-in-scikit-learn-9226f2b5a134" target="_blank">
+            <img src="images/publications/target.webp" class="card-img-top" alt="Predictive Models Article">
+            <div class="card-body">
+              <p class="card-text">Enhancing Predictive Models with TransformTargetRegressor in Scikit-Learn</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <!-- Publication 4 -->
+      <div class="col-md-3 mb-4">
+        <div class="card">
+          <a href="https://medium.com/@luqmanilman/serverless-cloud-computing-for-trading-a-new-era-d37f48c41ec1" target="_blank">
+            <img src="images/publications/cloud.webp" class="card-img-top" alt="Cloud Computing Article">
+            <div class="card-body">
+              <p class="card-text">Serverless Cloud Computing for Trading: A New Era</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Contact Me Section -->
+<section id="contact" class="contact-section text-center text-white bg-dark">
+  <div class="container">
+    <h2>Contact Me</h2>
+    <div class="row">
+      <div class="col-lg-6">
+        <p><i class="fas fa-envelope"></i> luqman.ilman@gmail.com</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-2 col-md-4 mb-4">
+        <a href="https://linkedin.com/in/luqmanilman" target="_blank">
+          <img src="icons/linkedin.png" alt="LinkedIn" class="social-icon">
+          LinkedIn
+        </a>
+      </div>
+      <div class="col-lg-2 col-md-4 mb-4">
+        <a href="https://github.com/luqmanilman" target="_blank">
+          <img src="icons/github.png" alt="GitHub" class="social-icon">
+          GitHub
+        </a>
+      </div>
+      <div class="col-lg-2 col-md-4 mb-4">
+        <a href="https://medium.com/@luqmanilman" target="_blank">
+          <img src="icons/medium.png" alt="Medium" class="social-icon">
+          Medium
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Sticky Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#home">Portfolio</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#skills">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<!-- Bootstrap JS and dependencies (jQuery and Popper) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.9.5/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
